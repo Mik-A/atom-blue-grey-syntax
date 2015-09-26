@@ -1,0 +1,17 @@
+{
+  "name": "blue-grey-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A dark syntax theme for Atom",
+  "keywords": [
+    "syntax",
+    "theme",
+    "atom"
+  ],
+  "author": "Rabah Ghodbane",
+  "repository": "https://github.com/arabsight/atom-blue-grey-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
