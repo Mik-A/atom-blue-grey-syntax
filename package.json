@@ -2,11 +2,13 @@
   "name": "blue-gray-syntax",
   "theme": "syntax",
   "version": "0.2.1",
-  "description": "A dark syntax theme for Atom",
+  "description": "A dark (blue gray) syntax theme for Atom",
   "keywords": [
     "syntax",
     "theme",
-    "atom"
+    "gray",
+    "dark",
+    "blue"
   ],
   "author": "Rabah Ghodbane",
   "repository": "https://github.com/arabsight/atom-blue-grey-syntax",
