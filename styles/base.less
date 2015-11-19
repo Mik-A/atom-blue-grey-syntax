@@ -64,12 +64,12 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .comment {
   color: @gray;
+  font-style: italic;
 }
 
 .entity {
   &.name.type {
     color: @light-orange;
-    // text-decoration: underline;
   }
 
   &.other.inherited-class {
@@ -86,6 +86,9 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.operator {
     color: @gray;
+    &.new {
+      color: @purple;
+    }
   }
 
   &.other.special-method {
@@ -99,6 +102,16 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .storage {
   color: @purple;
+
+  &.type {
+    &.function {
+      font-style: italic;
+    }
+    &.class.todo {
+      color: @light-gray;
+      font-weight: bold;
+    }
+  }
 }
 
 .constant {
@@ -141,7 +154,6 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @green;
 
-
   &.regexp {
     color: @cyan;
 
@@ -156,7 +168,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .punctuation {
-    color: @gray;
+  color: @gray;
 
   &.definition {
     &.comment {
@@ -195,15 +207,19 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @orange;
   }
 
-  &.function  {
-    color: @cyan;
+  &.function {
+    color: @syntax-text-color;
 
     &.any-method {
       color: @blue;
     }
+  }
+
+  &.constant.dom {
+    color: @syntax-text-color;
   }
 }
 
@@ -226,10 +242,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.other.attribute-name {
     color: @orange;
-
-    &.id {
-      color: @cyan;
-    }
+    //
+    //&.id {
+    //  color: @cyan;
+    //}
   }
 }
 
@@ -255,6 +271,9 @@ atom-text-editor .search-results .marker.current-result .region,
   &.separator {
     background-color: @gray;
     color: @syntax-text-color;
+  }
+  &.toc-list.id {
+    color: @green;
   }
 }
 
