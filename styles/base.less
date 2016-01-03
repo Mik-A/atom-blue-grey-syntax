@@ -73,7 +73,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @light-orange;
   }
 }
 
@@ -318,6 +318,50 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.raw.inline {
     color: @green;
+  }
+}
+
+.source.php {
+  .meta.function-call.php,
+  .meta.function-call.object.php,
+  .meta.function-call.static.php {
+    color: @blue;
+  }
+
+  .meta.string-contents.quoted.php {
+    color: @green;
+  }
+
+  .support.other.namespace.use.php {
+    color: @syntax-text-color;
+  }
+
+  .support.other.namespace.use-as.php {
+    color: @light-orange;
+  }
+
+  .variable.other.php {
+    color: @syntax-text-color;
+  }
+  .variable.other.property.php {
+    color: @red;
+  }
+
+  .keyword.other.phpdoc.php {
+    color: @red;
+  }
+
+  .constant.other.class.php {
+    color: @cyan;
+  }
+
+  .storage.type.php {
+    color: @light-orange;
+  }
+
+  .storage.type.class.php,
+  .storage.type.function.php {
+    color: @purple;
   }
 }
 
